@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>one_layout单个布局</title>
+	<style>
+		html,body{width: 100%;min-height: 100%;display: flex;padding:0;margin: 0;}
+		.main{width: 100%;display: flex;background-color: #ccc}
+		/*1  项目在主轴上的对齐方式。x轴---->justify-conten*/
+		.justify-content1{justify-content:flex-end;/*默认flex-start*/}
+		.justify-content2{justify-content:center;}
+		.justify-content3{justify-content:space-around;}
+		/*2  align-items属性定义项目在交叉轴上如何对齐。 y轴------>align-items*/
+		.align-items1{align-items:center;/*默认flex-start*/}
+		.align-items1{align-items:flex-end;}
+		/*3  justify-conten和align-items搭配使用*/
+		.justify-align1{justify-content:flex-end;align-items:center;}
+		.justify-align2{justify-content:center;align-items:center;}
+		.justify-align3{justify-content:flex-start;align-items:flex-end;}
+		
+		.item{width: 100px;height: 100px;background-color: red;border-radius: 10px}
+
+	</style>
+
+</head>
+<body>
+	<div class="main justify-content3">
+		<div class="item"></div>
+	</div>
+</body>
+</html>
