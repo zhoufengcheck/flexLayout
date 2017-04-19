@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+   
+
+    <title>flex入门网络基本布局</title>
+	
+    <style type="text/css">
+    body,html{width: 100%;min-height: 100%;padding: 0;margin: 0}
+      .container{
+       width: 100%;
+      }
+
+      /*公共样式*/
+      .Grid {
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 5px;
+      }
+      .Grid-cell {
+       height: 60px;
+       /*如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。*/
+       flex:1;
+       background-color: lightblue;
+       margin-right: 5px;
+       padding:10px;
+       box-sizing:border-box;
+      }
+      .autoHeight{height: auto;}
+
+  </style>
+  </head>
+  <body>
+      <div class="container">
+    	    <h1 style="width:200px;margin:30px auto;">网格布局</h1>
+    	    <div class="Grid">
+            <div class="Grid-cell">1</div>
+          </div>
+    	 
+        	<div class="Grid">
+          	<div class="Grid-cell">1/2</div>
+          	<div class="Grid-cell">1/2</div>
+        	</div>
+
+    	    <div class="Grid">
+    	        <div class="Grid-cell">1/3</div>
+    	        <div class="Grid-cell">1/3</div>
+    	        <div class="Grid-cell">1/3</div>
+    	    </div>
+    	    
+    	    <div class="Grid">
+    	        <div class="Grid-cell">1/4</div>
+    	        <div class="Grid-cell">1/4</div>
+    	        <div class="Grid-cell">1/4</div>
+    	        <div class="Grid-cell">1/4</div>
+    	    </div>
+
+    	    <div class="Grid">
+    	        <div class="Grid-cell autoHeight" >&nbsp;&nbsp;&nbsp;&nbsp;你高中爱上的那个人，会是你这辈子最爱的，这段感情没有小学的无知，没有初中的朦胧，没有大学的利益，没有社会的现实，它有的只是我们内心最真实的感觉。。——亲爱的不二 
+              </div>
+    	        <div class="Grid-cell autoHeight" >&nbsp;&nbsp;&nbsp;&nbsp;人是否相爱的唯一方法，就是分开；分开以后，如果难受如果思念，那就是真爱。而真爱一定会让两个人，再次相遇。 ——亲爱的不二<br>
+    	        &nbsp;&nbsp;&nbsp;&nbsp;其实，一个人爱不爱你，是能够感觉到，而且这种感觉相当真切和准确，不用骗自己，更不用勉强自己。如果真的不行，要学会转身。——亲爱的不二<br>
+    	        &nbsp;&nbsp;&nbsp;&nbsp;我爱你，所以我给了你伤害我的权力，只要我能忍受，我会一直陪伴着你，但你不能伤害我太多。我冷了，会淡漠，痛了，会松手。——亲爱的不二<br>
+    	        &nbsp;&nbsp;&nbsp;&nbsp;
+    	        在无数个睡不着的晚上，我相信会有很多人，习惯性的开始闭上眼睛，安静的想念一个人，想念一张脸。而在他们心里，能够有这样一个人可以想念，或许就够了。——亲爱的不二<br>
+    	        &nbsp;&nbsp;&nbsp;&nbsp;不要对爱你的人太过刻薄，一辈子真正对你好的人也没有几个。多少人在一切都将失去时才幡然醒悟，每个人都有脾气 ，为你忍下所有的怒气，仅仅因为那个人比你更心疼你。——亲爱的不二     
+    	       </div>
+    	    </div>
+     </div>
+ 
+  </body>
+</html>
