@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>six_layout六项目1</title>
+	<style>
+		html,body{width: 100%;min-height: 100%;display: flex;padding:0;margin: 0;}
+		.main{width: 100%;display:flex;background-color: #ccc;
+			flex-wrap:wrap;
+			/*align-content:flex-start;*/
+			align-content:space-between;
+		}
+		.column{
+			display:flex;
+			flex-basis:100%;/*属性定义了在分配多余空间之前，项目占据的主轴空间（main size）*/
+			justify-content: space-between;
+		}
+		.item{width: 100px;height: 100px;background-color: red;border-radius: 10px}
+		.wid2{width: 100%;background-color: blue}
+	</style>
+
+</head>
+<body>
+	<div class="main">
+		<div class="column">
+			<div class="item"></div>
+			<div class="item wid2"></div>
+			<div class="item"></div>
+		</div>
+		<div class="column">
+			<div class="item"></div>
+			<div class="item wid2"></div>
+			<div class="item"></div>
+		</div>
+	</div>
+</body>
+</html>
